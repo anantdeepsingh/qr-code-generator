@@ -11,7 +11,7 @@ router.post("/urlShortener", async (req, res) => {
   const { OriginalUrl } = req.body;
   // const base = req.headers.origin //process.env.BASE;
   const base = process.env.BASE;
-
+  console.log(base);
   const ID = nanoid();
 
   if (validateUrl(OriginalUrl)) {

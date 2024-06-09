@@ -16,6 +16,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
 app.set("view engine", "ejs");
+// to get access to css file is used as middleware
 app.use(express.static("public"));
 
 //Connect Mongo DB
